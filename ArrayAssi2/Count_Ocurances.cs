@@ -21,7 +21,8 @@ namespace ArrayAssi2
             {
                 if(ch[i] == word)
                 {
-                    count++;                   
+                    count++;
+                    Console.WriteLine(ch[i]);
                 }                
             }
             Console.WriteLine(count);

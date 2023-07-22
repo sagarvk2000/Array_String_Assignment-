@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>ArrayAssi2.Duplicate_no</StartupObject>
+    <StartupObject>ArrayAssi2.Palindrome</StartupObject>
   </PropertyGroup>
 
 </Project>

@@ -11,22 +11,33 @@ namespace ArrayAssi2
         static void Main(string[] args)
         {
             int[] arr = new int[5];
+            int[] arr1 = new int[5];
             Console.WriteLine("Enter Array Elements");
             for (int i = 0; i < arr.Length; i++)
             {
                 arr[i] = Convert.ToInt32(Console.ReadLine());
             }
-            int count = 0;
+            int count = 0,count1 =0;
 
             for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i] < 0)
                 {
                     count++;
-                    Console.Write(" " + arr[i] );
+                    arr1[i] = arr[i];
+                    Console.WriteLine("the negative no are = " +arr1[i]);
                 }
             }
-            Console.WriteLine($"Count of Negative Numbers is = {count}");
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] > 0)
+                {
+                    count1++;
+                    Console.WriteLine("Positive no are= " + arr[i]);
+                }
+            }
+            Console.WriteLine("The count of -ve no ="+count);
+            Console.WriteLine("The count of +ve no =" + count1);
         }
     }
 }

@@ -12,8 +12,8 @@ namespace ArrayAssi2
         {
             Console.WriteLine("Enter a word");
             string str=Console.ReadLine();
-            
-            string str1=string.Empty;
+
+            string str1 = "";  //string.Empty;
 
             for (int i = str.Length - 1; i >= 0; i--)
             {

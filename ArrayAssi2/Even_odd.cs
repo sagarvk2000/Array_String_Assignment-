@@ -27,23 +27,25 @@ namespace ArrayAssi2
                 if (array[i] % 2 == 0)
                 {
                     even[j++] = array[i];
+                    //j++;
                 }
                 else
                 {
                     odd[k++] = array[i];
+                    //k++;
                 }
             }
-            foreach (var item in even)
+            for (int i = 0; i < j; i++)
             {
-                Console.Write(item);
+                Console.WriteLine("Even no= "+even[i]);
             }
-            Console.WriteLine();
-
-            foreach (var item in odd)
+            for (int i = 0; i < k; i++)
             {
-                Console.Write(item);
+                Console.WriteLine("Odd no= "+odd[i]);
             }
-            Console.WriteLine();
+            //
+            //
+            //Console.WriteLine("\n\n");
         }
 
     }
